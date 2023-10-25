@@ -237,11 +237,6 @@ fieldset {
   outline: none;
 }
 
-/* .search-form__textfield:has(:focus-visible) {
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
-} */
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
   content: '';
   display: block;
@@ -260,7 +255,7 @@ fieldset {
   outline: none;
 }
 
-.search-form__label:has(:focus-within) {
+.search-form__label:has(:focus-visible) {
   border: 1px solid #FFF;
   outline: none;
 }
