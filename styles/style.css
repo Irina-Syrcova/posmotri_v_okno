@@ -85,7 +85,7 @@ video {
 }
 
 .content__details {
-  min-width: 399px;
+  width: 402px;
 }
 
 .content__list-item:not(:first-child) {
