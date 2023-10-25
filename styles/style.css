@@ -61,6 +61,7 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
+  width: 420px;
 }
 
 .content__details {
@@ -85,7 +86,7 @@ video {
 }
 
 .content__details {
-  width: 413px;
+  width: 420px;
 }
 
 .content__list-item:not(:first-child) {
