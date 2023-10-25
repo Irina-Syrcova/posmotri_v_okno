@@ -85,7 +85,7 @@ video {
 }
 
 .content__details {
-  width: 402px;
+  width: 413px;
 }
 
 .content__list-item:not(:first-child) {
@@ -105,7 +105,7 @@ video {
 }
 
 .content__video-card-description-container {
-  flex-grow: 1;
+  width: 200px;
 }
 
 .search-form__fieldset-title {
@@ -214,7 +214,7 @@ fieldset {
 }
 
 .more-button {
-  width: 100%;
+  width: 399px;
   margin-top: 30px;
   padding-top: 6px;
   padding-bottom: 6px;
