@@ -1,0 +1,293 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.page {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  column-gap: 30px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow: auto;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__list-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.search-form__fieldset-title {
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.title .content__accent {
+  color: #545050;
+}
+
+.content__list-item {
+  height: 103px;
+}
+
+.content__card-link {
+  display: block;
+  height: 100%;
+  margin: 2px;
+  padding: 2px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  margin-bottom: 6px;
+  font-family: Oswald;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  line-height: 16.2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  width: 225px;
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  column-gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  display: flex;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  border: 1px solid #FFF;
+}
+
+.button {
+  border: 1px solid #FFF;
+  color: #FFF;
+  /* text-align: center; */
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  padding: 6px 73.5px;
+}
+
+.more-button {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #FFF;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:has(:focus-visible) {
+  border: 1px solid #FFF;
+  outline: none;
+}
+
+/* .search-form__textfield:has(:focus-visible) {
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+} */
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  background-color: #fff;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:focus {
+  border: none;
+  outline: none;
+}
+
+.search-form__label:has(:focus-within) {
+  border: 1px solid #FFF;
+  outline: none;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:has(:focus-visible) {
+  border: 4px solid #FFF;
+  outline: none;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:has(:focus-visible) {
+  border: 1px solid #fff;
+}
