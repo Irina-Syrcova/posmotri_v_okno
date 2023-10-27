@@ -47,7 +47,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   column-gap: 30px;
-  min-width: 1158px;
+  width: 1140px;
   margin: auto;
 }
 
