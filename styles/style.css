@@ -47,7 +47,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   column-gap: 30px;
-  max-width: 1140px;
+  min-width: 1158px;
   margin: auto;
 }
 
@@ -61,15 +61,14 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
-  width: 421px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   row-gap: 28px;
-  width: 421px;
   height: 100%;
+  flex-grow: 1;
 }
 
 .result__video-container {
@@ -137,10 +136,14 @@ video {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
   line-height: 16.2px;
+  text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+  max-width: 200px;
 }
 
 .visually-hidden {
@@ -195,7 +198,6 @@ fieldset {
 .button {
   border: 1px solid currentColor;
   color: #FFF;
-  /* text-align: center; */
   font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -208,7 +210,7 @@ fieldset {
 }
 
 .more-button {
-  width: 399px;
+  width: 395px;
   margin-right: 2px;
   margin-left: 2px;
   margin-bottom: 2px;
@@ -273,10 +275,6 @@ fieldset {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
-/* .content__card-link:active {
-  background-color: #545050;
-} */
 
 .content__card-link_current {
   background-color: #545050;
