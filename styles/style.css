@@ -61,6 +61,7 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
+  width: 420px;
 }
 
 .content__details {
