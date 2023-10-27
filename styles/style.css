@@ -67,7 +67,7 @@ ol {
   display: flex;
   flex-direction: column;
   row-gap: 28px;
-  width: 100%;
+  width: 413px;
   height: 100%;
 }
 
@@ -82,10 +82,6 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.content__details {
-  width: 413px;
 }
 
 .content__list-item:not(:first-child) {
@@ -123,10 +119,6 @@ video {
 
 .title .content__accent {
   color: #545050;
-}
-
-.content__list-item {
-  min-height: 103px; 
 }
 
 .content__card-link {
@@ -191,11 +183,12 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   display: flex;
-  display: flex;
   width: 19px;
   height: 19px;
   margin-right: 5px;
   border: 1px solid #FFF;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -242,7 +235,6 @@ fieldset {
   display: block;
   width: 15px;
   height: 15px;
-  margin: 1px;
   background-color: #fff;
 }
 
@@ -272,12 +264,17 @@ fieldset {
   outline: none;
 }
 
-.button:has(:focus-visible) {
-  border: 4px solid #FFF;
-  outline: none;
+.button:focus-visible {
+  border: 1px solid #FFF;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
-.content__card-link:active {
+/* .content__card-link:active {
+  background-color: #545050;
+} */
+
+.content__card-link_current {
   background-color: #545050;
 }
 
@@ -289,6 +286,6 @@ fieldset {
   outline: none;
 }
 
-.content__card-link:has(:focus-visible) {
+.content__card-link:focus-visible {
   border: 1px solid #fff;
 }
